@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Happy Birthday Message Creator</h1>
+    <form>
+        <!-- using label tag to create label -->
+        <label for="message">Message?</label>
+        <!-- using text to enter the message -->
+        <input type="text" placeholder="Happy Birthday!" name="message" id="message"><br><br>
+        <label for="email">Email address?</label>
+        <!-- using email to enter email and pattern attribute for regex -->
+        <input type="email" pattern="[a-zA-Z0-9-_\.]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*" placeholder="name@domain.com" name="email" id="email"><br>
+
+        <label for="date">Date to send?</label>
+        <!-- using date to enter the date -->
+        <input type="date" name="dateToSend" id="dateToSend"><br><br>
+        <label for="color">Message color?</label>
+        <!-- using color to make a color picker -->
+        <input type="color" name="messageColor" id="messageColor"><br><br>
+        <label for="blinks">Number of blinks?</label>
+        <!-- using number to enter number and min for minimum value and max for maximum value and value for default value -->
+        <input type="number" min="0" max="10" value="0" placeholder="0" name="numBlinks" id="numBlinks"><br><br>
+        <label for="volume">Music volume?</label>
+        <!-- using range to slide range and min for minimum value and max for maximum value and value for default value -->
+        <input type="range" value="20" min="0" max="50" name="musicVolume" id="musicVolume"><br><br>
+
+        <!-- using submit to create a submit button -->
+        <button type="submit">Send Birthday Message</button>
+
+    </form>
+
+</body>
+
+</html>
